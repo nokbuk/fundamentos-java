@@ -16,6 +16,10 @@ public class PedraPapelTesoura {
 		System.out.println("Digite a opção desejada: ");
 		jogador = mao.nextInt();
 		//Estrutura switch case só admite apenas o tipo "int" e 'char'
+		if(jogador >= 4) {
+			System.out.println("Número Invalido!!");
+		}
+		Else{
 		switch (jogador) {
 		case 1:
 			System.out.println("Jogador escolheu PAPEL");
@@ -36,7 +40,7 @@ public class PedraPapelTesoura {
 		//+1 soma 1 ao resultado(1 ou 2 ou 3)
 		int computador = (int)(Math.random() * 3 + 1);
 		System.out.println(computador);
-		switch (jogador) {
+		switch (computador) {
 		case 1:
 			System.out.println("Computador escolheu PAPEL");
 			break;
@@ -46,6 +50,18 @@ public class PedraPapelTesoura {
 		case 3:
 			System.out.println("Computador escolheu TESOURA");
 			break;
+		}
+			if (jogador == computador) {
+				System.out.println("Empate!! ");
+			} else {
+         if ((jogador == 1 && computador == 3)||(jogador == 2 && computador == 1)||(jogador == 3 && computador == 2)){
+			
+        	System.out.println("Computador Venceu!! "); 
+		} else {
+			System.out.println("Jogador Venceu!! "); 
+			
+		}
+			}
 		
 		}
 		mao.close();
