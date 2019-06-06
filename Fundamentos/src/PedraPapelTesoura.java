@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class PedraPapelTesoura {
 
-	public static void main() {
+	public static void main(String[] args) {
 		
 		int jogador;
 		Scanner mao = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class PedraPapelTesoura {
 		if(jogador >= 4) {
 			System.out.println("Número Invalido!!");
 		}
-		Else{
+		else {
 		switch (jogador) {
 		case 1:
 			System.out.println("Jogador escolheu PAPEL");
